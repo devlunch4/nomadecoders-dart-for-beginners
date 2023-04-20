@@ -1,8 +1,8 @@
 void main() {
-    late final String name;
-    // print(name); // Error Alert
-    // Do something, Go to API
-    name = 'lunch';
-    // name = 123; // Error
-    print(name); // Good
+    // 'Consts' in JavaScript or TypeScript
+    // are similar to 'final' in Dart.
+
+    const name = 'lunch';
+    print(name);
+    name = 'change'; // Error
 }
