@@ -1,19 +1,11 @@
 void main() {
-    var name = 'devlunch4';
-    print(name);
-
-    String name = 'devlunch4';
-    print(name);
-
-    dynamic name;
-    name = 123;
-    if (name is String) {
-        print(name.trim());
+    String? lunch = 'lunch';
+    lunch = null;
+    if (lunch != null) {
+        lunch.isNotEmpty;
+        print('not null');
     }
-    if (name is int) {
-        print('name:');
-        print(name);
-        print('name.bitLength:');
-        print(name.bitLength);
+    else{
+        print('null');
     }
 }
