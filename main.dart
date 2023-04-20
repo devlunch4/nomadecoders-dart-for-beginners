@@ -1,7 +1,4 @@
 void main() {
-    String? lunch = 'lunch';
-    print(lunch?.isNotEmpty);
-
-    lunch = null;
-    print(lunch?.isNotEmpty);
+    final String name = 'lunch';
+    name = 'lunch'; // Error
 }
