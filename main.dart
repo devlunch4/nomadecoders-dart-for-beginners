@@ -1,4 +1,8 @@
 void main() {
-    final String name = 'lunch';
-    name = 'lunch'; // Error
+    late final String name;
+    // print(name); // Error Alert
+    // Do something, Go to API
+    name = 'lunch';
+    // name = 123; // Error
+    print(name); // Good
 }
