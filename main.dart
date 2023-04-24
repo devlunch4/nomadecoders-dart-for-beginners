@@ -1,42 +1,27 @@
 void main() {
-    var player = {
-        'name': 'john',
-        'xp': 99.99,
-        'superpower': false,
-    };
-    print('player: $player');
-    //
-    Map<int, bool> mapPlayer = {
-        1: true,
-        2: false,
-        3: true,
-    };
-    print('\nmapPlayer: $mapPlayer');
-    //
-    Map<List<int>, bool> listPlayer = {
-        [1, 2, 3, 4]: true,
-        [5, 6, 7, 8]: false,
-    };
-    print('\nlistPlayer: $listPlayer');
-    //
-    List<Map<String, Object>> listMapPlayers = [
-        {
-          'name': 'john1',
-          'xp': 123,
-        },
-        {
-          'name': 'john2',
-          'xp': 12345,
-        }
-    ];
-    print('\nlistMapPlayers: $listMapPlayers');
-}
+    Set<int> setNumbers = {1, 2, 3, 4};
+    setNumbers.add(1);
+    setNumbers.add(1);
+    setNumbers.add(1);
+    setNumbers.add(1);
+    print('setNumbers: $setNumbers');
+
+    List<int> listNumbers = [1, 2, 3, 4];
+    listNumbers.add(1);
+    listNumbers.add(1);
+    listNumbers.add(1);
+    listNumbers.add(1);
+    print('listNumbers: $listNumbers');
+
+    var varIsSetNumbers = {1, 2, 3, 4};
+    varIsSetNumbers.add(1);
+    varIsSetNumbers.add(1);
+    varIsSetNumbers.add(1);
+    varIsSetNumbers.add(1);
+    print('varIsSetNumbers: $varIsSetNumbers');
 // PRINT
 // >>>
-// player: {name: john, xp: 99.99, superpower: false}
-// 
-// mapPlayer: {1: true, 2: false, 3: true}
-// 
-// listPlayer: {[1, 2, 3, 4]: true, [5, 6, 7, 8]: false}
-// 
-// listMapPlayers: [{name: john1, xp: 123}, {name: john2, xp: 12345}]
+// setNumbers: {1, 2, 3, 4}
+// listNumbers: [1, 2, 3, 4, 1, 1, 1, 1]
+// varIsSetNumbers: {1, 2, 3, 4}
+}
