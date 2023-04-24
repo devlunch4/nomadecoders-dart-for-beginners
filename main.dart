@@ -1,13 +1,19 @@
 void main() {
-    String name = 'lunch';
-    print(name.length); //
-    bool alive = true;
-    print(alive.runtimeType); //
-    int age = 100;
-    print(age.isNaN); //
-    double money = 99.9;
-    print(money.round()); //
-    num x = 12; //In Dart num ist int and double
-    x = 1.1;
-    print(x.hashCode); //
+    // List
+    var giveMeFive = true;
+    var numbers = [
+    1,
+    2,
+    3,
+    4,
+    if (giveMeFive) 5,
+    ];
+    numbers.add(100);
+    print(numbers);
+    print(numbers.first);
+    print(numbers.last);
+    // >>> PRINT
+    // [1, 2, 3, 4, 5, 100]
+    // 1
+    // 100 
 }
