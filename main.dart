@@ -1,19 +1,8 @@
 void main() {
-    // List
-    var giveMeFive = true;
-    var numbers = [
-    1,
-    2,
-    3,
-    4,
-    if (giveMeFive) 5,
-    ];
-    numbers.add(100);
-    print(numbers);
-    print(numbers.first);
-    print(numbers.last);
-    // >>> PRINT
-    // [1, 2, 3, 4, 5, 100]
-    // 1
-    // 100 
+    var name = 'lunch';
+    var thisYear = 2023;
+    var greeting = '''Hello, Everyone, 
+    My name is $name, Nice to meet you.
+    \'Next\' year is ${thisYear + 1}.''';
+    print(greeting);
 }
