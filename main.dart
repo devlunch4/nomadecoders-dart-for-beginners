@@ -13,3 +13,9 @@ void main() {
     print(sayHelloFAS("lunch!!!"));
     print(add(1, 2));
 }
+
+// PRINT
+// >>>
+// Hello, lunch, Nice to meet you.
+// Hello, lunch!!!, Nice to meet you.
+// 3
