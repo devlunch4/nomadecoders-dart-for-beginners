@@ -1,27 +1,15 @@
+String sayHello(String name) {
+    return "Hello, $name, Nice to meet you.";
+}
+
+// fat arrow sysntax ex1
+String sayHelloFAS(String name) => "Hello, $name, Nice to meet you.";
+
+// fat arrow sysntax ex2
+num add(num a, num b) => a + b;
+
 void main() {
-    Set<int> setNumbers = {1, 2, 3, 4};
-    setNumbers.add(1);
-    setNumbers.add(1);
-    setNumbers.add(1);
-    setNumbers.add(1);
-    print('setNumbers: $setNumbers');
-
-    List<int> listNumbers = [1, 2, 3, 4];
-    listNumbers.add(1);
-    listNumbers.add(1);
-    listNumbers.add(1);
-    listNumbers.add(1);
-    print('listNumbers: $listNumbers');
-
-    var varIsSetNumbers = {1, 2, 3, 4};
-    varIsSetNumbers.add(1);
-    varIsSetNumbers.add(1);
-    varIsSetNumbers.add(1);
-    varIsSetNumbers.add(1);
-    print('varIsSetNumbers: $varIsSetNumbers');
-// PRINT
-// >>>
-// setNumbers: {1, 2, 3, 4}
-// listNumbers: [1, 2, 3, 4, 1, 1, 1, 1]
-// varIsSetNumbers: {1, 2, 3, 4}
+    print(sayHello("lunch"));
+    print(sayHelloFAS("lunch!!!"));
+    print(add(1, 2));
 }
