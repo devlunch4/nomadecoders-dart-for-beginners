@@ -1,37 +1,41 @@
-class Human {
-  final String name;
-  Human(this.name);
-  void sayHello() {
-    print('Hi, my name is $name');
+class Strong {
+  final double strengthLevel = 1500.99;
+}
+
+class QuickRunner {
+  void runQuick() {
+    print('runnnnnnnnnnn!');
   }
 }
 
+class Tall {
+  final double height = 1.99;
+}
+
+class Horse with Strong, QuickRunner {}
+
+class Kid with QuickRunner {}
+
 enum Team { blue, red }
 
-class Player extends Human {
+class Player with Strong, QuickRunner, Tall {
   final Team team;
-
   Player({
     required this.team,
-    required String name,
-  }) : super(name);
-
-  @override
-  void sayHello() {
-    super.sayHello();
-    print('and I play for ${team}');
-  }
+  });
 }
 
 void main() {
   var player = Player(
     team: Team.red,
-    name: 'lunch',
   );
-  player.sayHello();
+  print(player.height);
+  print(player.strengthLevel);
+  player.runQuick();
 }
 
 // PRINT
 // >>>
-// Hi, my name is lunch
-// and I play for Team.red
+// 1.99
+// 1500.99
+// runnnnnnnnnnn!
